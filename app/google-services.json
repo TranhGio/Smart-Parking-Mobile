@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "526031570641",
+    "project_id": "smart-parking-44555",
+    "storage_bucket": "smart-parking-44555.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526031570641:android:00bfccded72fc0a9eaa7f0",
+        "android_client_info": {
+          "package_name": "com.davie.smartparking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpt7P3TnkCHlHgN7ubm-x69GkxsuHzphA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

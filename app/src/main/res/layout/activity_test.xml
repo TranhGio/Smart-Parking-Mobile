@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.dashboard.TestActivity">
+
+    <RelativeLayout
+        android:id="@+id/topNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/gradientBlue">
+
+
+        <TextView
+            android:id="@+id/txtHuduma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="HUDUMA PARK"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/ubuntu_bold"/>
+
+        <TextView
+            android:id="@+id/welcomeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Welcome DRIVER"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeTxt"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="My Dashboard"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Parking Slots"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/txtHuduma"
+            android:src="@drawable/dummy_photo"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/topNavBar"
+        android:hint="Park Here ..."
+        android:layout_height="wrap_content" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/searchView"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rcvParkingSlots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
